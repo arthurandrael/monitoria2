@@ -8,10 +8,24 @@ var thebed = document.querySelector('#quarto')
 function Monitor() {
   if (monitorb.style.display == "block") {
     monitorb.style.display = "none"
+    
+    function playSound(audioName) {
+      let audio = new Audio(audioName)
+      audio.play()
+    
+    }
+    playSound('audio/monitor.mp3')
   }
   
   else {
       monitorb.style.display = "block"
+      
+      function playSound(audioName) {
+        let audio = new Audio(audioName)
+        audio.play()
+      
+      }
+      playSound('audio/monitor.mp3')
   }
 }
 
@@ -42,6 +56,7 @@ function Left() {
   document.querySelector('#lanterna2').style.display = 'none'
   document.querySelector('#lanterna3').style.display = 'none'
   document.querySelector('#lanterna4').style.display = 'none'
+  monitorb.style.display = 'none'
 }
 
 
@@ -58,6 +73,7 @@ function Right() {
   document.querySelector('#lanterna2').style.display = 'block'
   document.querySelector('#lanterna3').style.display = 'none'
   document.querySelector('#lanterna4').style.display = 'none'
+  monitorb.style.display = 'none'
 }
 
 
@@ -112,9 +128,23 @@ function Back() {
 
 function Ligar1() {
   doorL.src = 'imgs/doorLOn.jpeg'
+  
+  function playSound(audioName) {
+    let audio = new Audio(audioName)
+    audio.play()
+  
+  }
+  playSound('audio/flash.mp3')
 }
 function Ligar2() {
   doorL.src = 'imgs/doorROn.jpeg'
+  
+  function playSound(audioName) {
+    let audio = new Audio(audioName)
+    audio.play()
+  
+  }
+  playSound('audio/flash.mp3')
 }
 
 
@@ -130,23 +160,71 @@ function Ligar3() {
   }
   playSound('audio/freddies.mp3')
   
+  function playSound(audioName) {
+    let audio = new Audio(audioName)
+    audio.play()
+  
+  }
+  playSound('audio/flash.mp3')
+  
 }
 function Ligar4() {
   doorL.src = 'imgs/wardrobeOn.jpeg'
+  
+  function playSound(audioName) {
+    let audio = new Audio(audioName)
+    audio.play()
+  
+  }
+  playSound('audio/flash.mp3')
 }
 
 
 function Desligar1() {
   doorL.src = 'imgs/doorL.jpg'
+  
+  function playSound(audioName) {
+    let audio = new Audio(audioName)
+    audio.play()
+  
+  }
+  playSound('audio/flash.mp3')
 }
+
+
 function Desligar2() {
   doorL.src = 'imgs/doorR.jpg'
+  
+  function playSound(audioName) {
+    let audio = new Audio(audioName)
+    audio.play()
+  
+  }
+  playSound('audio/flash.mp3')
 }
+
+
 function Desligar3() {
   doorL.src = 'imgs/BedOff.jpg'
+  
+  function playSound(audioName) {
+    let audio = new Audio(audioName)
+    audio.play()
+  
+  }
+  playSound('audio/flash.mp3')
 }
+
+
 function Desligar4() {
   doorL.src = 'imgs/wardrobeOff.jpeg'
+  
+  function playSound(audioName) {
+    let audio = new Audio(audioName)
+    audio.play()
+  
+  }
+  playSound('audio/flash.mp3')
 }
 
 
