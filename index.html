@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <section class="quarto">
+    
+    <img src="imgs/quarto.jpeg" alt="" id="quarto">
+    
+    
+    
+    <img src="imgs/monitorIcon.png" alt="" id="monitorIcon" onclick="Monitor()">
+    
+    <img src="imgs/monitor.jpeg" id="gif">
+    
+    
+    
+    
+    
+    <section class="options">
+      
+      <div id="left" class="option" onclick="Left()">
+        <p>Left</p>
+      </div>
+      
+      <div id="right" class="option" onclick="Right()">
+        <p>Right</p>
+      </div>
+      
+      <div id="bed" class="option" onclick="Bed()">
+        <p>Bed</p>
+      </div>
+      
+      <div id="wardrobe" class="option" onclick="Wardrobe()">
+        <p>Wardrobe</p>
+      </div>
+      
+    </section>
+    
+    
+    
+    <section class="options2">
+      
+      <div class="option2" id="lanterna1" class="lanterna" onclick="Ligar1()" ondblclick="Desligar1()">
+        <p>Lanterna</p>
+      </div>
+      <div class="option2" id="lanterna2" onclick="Ligar2()" class="lanterna" ondblclick="Desligar2()">
+        <p>Lanterna</p>
+      </div>
+      <div class="option2" id="lanterna3" onclick="Ligar3()" class="lanterna" ondblclick="Desligar3()">
+        <p>Lanterna</p>
+      </div>
+      <div class="option2" id="lanterna4" onclick="Ligar4()" class="lanterna" ondblclick="Desligar4()">
+        <p>Lanterna</p>
+      </div>
+      
+      <div class="option2" id="back" onclick="Back()">
+        <p>Retornar</p>
+      </div>
+      
+    </section>
+    
+    
+    <div>
+      <audio controls>
+        <source src="audio/freddies.mp3" type="" id="freddies">
+      </audio>
+    </div>
+    
+  </section>
+  
+  <script src="main.js"></script>
+</body>
+</html>
