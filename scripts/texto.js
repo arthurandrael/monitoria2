@@ -30,6 +30,7 @@ var c = 0
 
 function Monitor() {
   c++
+  
   if (monitorb.style.display == "block") {
     c--
     monitorb.style.display = "none"
