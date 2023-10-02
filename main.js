@@ -1,33 +1,12 @@
 var monitorb = document.querySelector("#gif")
+var texts = document.querySelector('.textos')
 var doorL = document.querySelector('#quarto')
 var doorR = document.querySelector('#quarto')
 var ward = document.querySelector('#quarto')
 var thebed = document.querySelector('#quarto')
 
 
-function Monitor() {
-  if (monitorb.style.display == "block") {
-    monitorb.style.display = "none"
-    
-    function playSound(audioName) {
-      let audio = new Audio(audioName)
-      audio.play()
-    
-    }
-    playSound('audio/monitor.mp3')
-  }
-  
-  else {
-      monitorb.style.display = "block"
-      
-      function playSound(audioName) {
-        let audio = new Audio(audioName)
-        audio.play()
-      
-      }
-      playSound('audio/monitor.mp3')
-  }
-}
+
 
 
 /*---------------------------------------*/
@@ -128,6 +107,7 @@ function Back() {
 
 function Ligar1() {
   doorL.src = 'imgs/doorLOn.jpeg'
+  document.querySelector('.alternativa').style.display = 'block'
   
   function playSound(audioName) {
     let audio = new Audio(audioName)

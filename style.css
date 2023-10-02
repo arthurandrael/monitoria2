@@ -64,6 +64,7 @@ body {
 
 
 #gif {
+  display: none;
   position: absolute;
   z-index: 1;
   left: 10%;
@@ -71,7 +72,6 @@ body {
   width: 80%;
   height: 100%;
   border-radius: 1rem;
-  display: none;
 }
 
 
@@ -100,3 +100,41 @@ body {
   padding-top: 1rem;
 }
 
+
+.alternativa {
+  color: darkgrey;
+  border: 1.5px solid darkgray;
+  font-size: .7rem;
+  text-align: center;
+  position: absolute;
+  border-radius: .5rem;
+  top: 35%;
+  left: 45%;
+  transform: rotate(25deg);
+  padding: .5rem;
+  display: none;
+}
+
+
+
+.textos {
+  z-index: 1;
+  position: absolute;
+  width: 75%;
+  height: 95%;
+  bottom: 1.5%;
+  left: 13%;
+  padding: 2%;
+  font-size: 90%;
+  display: none;
+}
+.textos h1 {
+  color: white
+}
+.textos p {
+  color: white;
+  width: 100%;
+  padding-top: 3%;
+  text-align: justify;
+  font-weight: 300;
+}
