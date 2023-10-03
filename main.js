@@ -243,3 +243,9 @@ function Desligar4() {
 
 
 var auFreddies = document.querySelector('#freddies')
+
+
+
+/*---------------------------------------*/
+
+

@@ -148,7 +148,24 @@ body {
   font-weight: bold;
   font-size: 180%;
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   right: 2%;
   top: 2%;
 }
+
+
+/*#prox, #ant {
+  color: greenyellow;
+  font-size: 150%;
+  position: absolute;
+  text-align: right;
+  top: 78%;
+}
+
+#prox {
+  right: 5%;
+}
+#ant {
+  right: 95%;
+  display: none;
+}*/
