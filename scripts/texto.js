@@ -15,11 +15,21 @@ var c = 0
 
 
 
-function resp1(){
+function resp1() {
   resposta = 'A1'
-  
-  if(c==1) {
-    alert('errado')
+
+  if (c == 1) {
+    doorL.currentTime = 0.2
+    doorL.src = "jumpscares/jumpBonnie.gif"
+    
+    function playSound(audioName) {
+      let audio = new Audio(audioName)
+      audio.play()
+    
+    }
+    playSound('audio/jumpscaresFnaf4.mp3')
+    
+    A1.style.display = 'none'
     erro++
   }
   if(c==2) {
