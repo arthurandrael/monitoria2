@@ -130,6 +130,8 @@ function resp3() {
     A3.style.display = 'none'
     erro++
   }
+  
+  
   if (c == 2) {
     doorL.currentTime = 2
     doorL.src = "jumpscares/jumpMangle.gif"
