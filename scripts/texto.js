@@ -32,6 +32,8 @@ function resp1() {
     A1.style.display = 'none'
     erro++
   }
+  
+  
   if(c==2) {
     alert('certo')
     pontos++
