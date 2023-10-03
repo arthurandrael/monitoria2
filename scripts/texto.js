@@ -62,10 +62,22 @@ function resp1() {
 function resp2() {
   resposta = 'A2'
   
+  
   if(c==1) {
-    alert('errado')
+    doorL.currentTime = 2
+    doorL.src = "jumpscares/jumpChica.gif"
+    
+    function playSound(audioName) {
+      let audio = new Audio(audioName)
+      audio.play()
+    
+    }
+    playSound('audio/jumpscaresFnaf4.mp3')
     erro++
+    A2.style.display = 'none'
   }
+  
+  
   if (c == 2) {
     alert('errado')
     erro++
