@@ -155,7 +155,7 @@ function Ligar3() {
   
   function playSound(audioName) {
     let audio = new Audio(audioName)
-    audio.loop = 'true'
+    audio.loop = 'false'
     audio.play()
     
   }
@@ -222,6 +222,12 @@ function Desligar3() {
   
   }
   playSound('audio/flash.mp3')
+  
+  function playSound(audioName) {
+    let audio = new Audio(audioName)
+    audio.pause()
+  }
+  playSound('audio/freddies.mp3')
 }
 
 

@@ -79,9 +79,19 @@ function resp2() {
   
   
   if (c == 2) {
-    alert('errado')
+    doorL.currentTime = 2
+    doorL.src = "jumpscares/jumpChica.gif"
+    
+    function playSound(audioName) {
+      let audio = new Audio(audioName)
+      audio.play()
+    
+    }
+    playSound('audio/jumpscaresFnaf4.mp3')
     erro++
   }
+  
+  
   if (c == 3) {
     alert('errado')
     erro++
@@ -106,7 +116,16 @@ function resp3() {
   resposta = 'A3'
   
   if(c==1) {
-    alert('errado')
+    doorL.currentTime = 2
+    doorL.src = "jumpscares/jumpFredbear.gif"
+    
+    function playSound(audioName) {
+      let audio = new Audio(audioName)
+      audio.play()
+    
+    }
+    playSound('audio/jumpscaresFnaf4.mp3')
+    A3.style.display = 'none'
     erro++
   }
   if (c == 2) {
