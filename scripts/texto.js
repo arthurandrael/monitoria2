@@ -194,7 +194,15 @@ function resp3() {
     pontos++
   }
   if (c == 5) {
+    doorL.currentTime = 2
+    doorL.src = "jumpscares/jumpFred2.gif"
     
+    function playSound(audioName) {
+      let audio = new Audio(audioName)
+      audio.play()
+    
+    }
+    playSound('audio/jumpscaresFnaf3.mp3')
     erro++
   }
   if (c == 6) {
@@ -249,7 +257,15 @@ function resp4() {
     erro++
   }
   if (c == 5) {
-    alert('errado')
+    doorL.currentTime = 2
+    doorL.src = "jumpscares/jumpPhanChica.gif"
+    
+    function playSound(audioName) {
+      let audio = new Audio(audioName)
+      audio.play()
+    
+    }
+    playSound('audio/jumpscaresFnaf3.mp3')
     erro++
   }
   if (c == 6) {
