@@ -4,6 +4,11 @@ var A1 = document.querySelector('#A1')
 var A2 = document.querySelector('#A2')
 var A3 = document.querySelector('#A3')
 var A4 = document.querySelector('#A4')
+var l1 = document.querySelector('#lanterna1')
+var l2 = document.querySelector('#lanterna2')
+var l3 = document.querySelector('#lanterna3')
+var l4 = document.querySelector('#lanterna4')
+var ret = document.querySelector('#back')
 var h = 0
 var hora =document.querySelector('#hora')
 var pontos = 0
@@ -30,20 +35,24 @@ function resp1() {
     playSound('audio/jumpscaresFnaf4.mp3')
     
     A1.style.display = 'none'
+    l1.style.display = 'none'
+    ret.style.backgroundColor = '#FF0B4594'
     erro++
   }
   
   
   if(c==2) {
-    alert('certo')
+    ret.style.backgroundColor = '#0BFF4554'
     pontos++
     hora.innerHTML = '02:00'
   }
   if(c==3){
-    alert('certo')
+    ret.style.backgroundColor = '#0BFF4554'
     pontos++
     hora.innerHTML = '03:00'
   }
+  
+  
   if(c==4) {
     doorL.currentTime = 2
     doorL.src = "jumpscares/jumpHBonnie1.gif"
@@ -55,7 +64,13 @@ function resp1() {
     }
     playSound('audio/jumpscaresFnaf4.mp3')
     erro++
+    
+    A1.style.display = 'none'
+    l1.style.display = 'none'
+    ret.style.backgroundColor = '#FF0B4594'
   }
+  
+  
   if(c==5){
     doorL.currentTime = 2
     doorL.src = "jumpscares/jumpBallora.gif"
@@ -67,10 +82,28 @@ function resp1() {
     }
     playSound('audio/jumpscaresFnaf1.mp3')
     erro++
+    
+    A1.style.display = 'none'
+    l1.style.display = 'none'
+    ret.style.backgroundColor = '#FF0B4594'
   }
+  
+  
   if(c==6){
-    alert('errado')
+    doorL.currentTime = 2
+    doorL.src = "jumpscares/jumpMangle.gif"
+    
+    function playSound(audioName) {
+      let audio = new Audio(audioName)
+      audio.play()
+    
+    }
+    playSound('audio/jumpscaresFnaf4.mp3')
     erro++
+    
+    A1.style.display = 'none'
+    l1.style.display = 'none'
+    ret.style.backgroundColor = '#FF0B4594'
   }
 }
 
@@ -91,6 +124,10 @@ function resp2() {
     playSound('audio/jumpscaresFnaf4.mp3')
     erro++
     A2.style.display = 'none'
+    
+    A2.style.display = 'none'
+    l2.style.display = 'none'
+    ret.style.backgroundColor = '#FF0B4594'
   }
   
   
@@ -105,6 +142,10 @@ function resp2() {
     }
     playSound('audio/jumpscaresFnaf3.mp3')
     erro++
+    
+    A2.style.display = 'none'
+    l2.style.display = 'none'
+    ret.style.backgroundColor = '#FF0B4594'
   }
   
   
@@ -119,6 +160,10 @@ function resp2() {
     }
     playSound('audio/jumpscaresFnaf3.mp3')
     erro++
+    
+    A2.style.display = 'none'
+    l2.style.display = 'none'
+    ret.style.backgroundColor = '#FF0B4594'
   }
   
   
@@ -133,15 +178,31 @@ function resp2() {
     }
     playSound('audio/jumpscaresFnaf4.mp3')
     erro++
+    
+    A2.style.display = 'none'
+    l2.style.display = 'none'
+    ret.style.backgroundColor = '#FF0B4594'
   }
   if (c == 5) {
-    alert('certo')
+    ret.style.backgroundColor = '#0BFF4554'
     hora.innerHTML = '05:00'
     pontos++
   }
   if (c == 6) {
-    alert('errado')
+    doorL.currentTime = 2
+    doorL.src = "jumpscares/jumpPhanChica.gif"
+    
+    function playSound(audioName) {
+      let audio = new Audio(audioName)
+      audio.play()
+    
+    }
+    playSound('audio/jumpscaresFnaf3.mp3')
     erro++
+    
+    A2.style.display = 'none'
+    l2.style.display = 'none'
+    ret.style.backgroundColor = '#FF0B4594'
   }
 }
 
@@ -161,6 +222,10 @@ function resp3() {
     playSound('audio/jumpscaresFnaf4.mp3')
     A3.style.display = 'none'
     erro++
+    
+    A3.style.display = 'none'
+    l3.style.display = 'none'
+    ret.style.backgroundColor = '#FF0B4594'
   }
   
   
@@ -175,6 +240,10 @@ function resp3() {
     }
     playSound('audio/jumpscaresFnaf3.mp3')
     erro++
+    
+    A3.style.display = 'none'
+    l3.style.display = 'none'
+    ret.style.backgroundColor = '#FF0B4594'
   }
   if (c == 3) {
     doorL.currentTime = 2
@@ -187,9 +256,13 @@ function resp3() {
     }
     playSound('audio/jumpscaresFnaf2.mp3')
     erro++
+    
+    A3.style.display = 'none'
+    l3.style.display = 'none'
+    ret.style.backgroundColor = '#FF0B4594'
   }
   if (c == 4) {
-    alert('certo')
+    ret.style.backgroundColor = '#0BFF4554'
     hora.innerHTML = '04:00'
     pontos++
   }
@@ -204,10 +277,26 @@ function resp3() {
     }
     playSound('audio/jumpscaresFnaf3.mp3')
     erro++
+    
+    A3.style.display = 'none'
+    l3.style.display = 'none'
+    ret.style.backgroundColor = '#FF0B4594'
   }
   if (c == 6) {
-    alert('errado')
+    doorL.currentTime = 2
+    doorL.src = "jumpscares/jumpPhantonBB.gif"
+    
+    function playSound(audioName) {
+      let audio = new Audio(audioName)
+      audio.play()
+    
+    }
+    playSound('audio/jumpscaresFnaf3.mp3')
     erro++
+    
+    A3.style.display = 'none'
+    l3.style.display = 'none'
+    ret.style.backgroundColor = '#FF0B4594'
   }
 }
 
@@ -216,7 +305,7 @@ function resp4() {
   resposta = 'A4'
   
   if(c==1) {
-    alert('certo')
+    ret.style.backgroundColor = '#0BFF4554'
     hora.innerHTML = '01:00'
     pontos++
   }
@@ -231,6 +320,10 @@ function resp4() {
     }
     playSound('audio/jumpscaresFnaf4.mp3')
     erro++
+    
+    A4.style.display = 'none'
+    l4.style.display = 'none'
+    ret.style.backgroundColor = '#FF0B4594'
   }
   if (c == 3) {
     doorL.currentTime = 2
@@ -243,6 +336,10 @@ function resp4() {
     }
     playSound('audio/jumpscaresFnaf3.mp3')
     erro++
+    
+    A4.style.display = 'none'
+    l4.style.display = 'none'
+    ret.style.backgroundColor = '#FF0B4594'
   }
   if (c == 4) {
     doorL.currentTime = 2
@@ -255,10 +352,14 @@ function resp4() {
     }
     playSound('audio/jumpscaresFnaf4.mp3')
     erro++
+    
+    A4.style.display = 'none'
+    l4.style.display = 'none'
+    ret.style.backgroundColor = '#FF0B4594'
   }
   if (c == 5) {
     doorL.currentTime = 2
-    doorL.src = "jumpscares/jumpPhanChica.gif"
+    doorL.src = "jumpscares/jumpPhanFoxy.gif"
     
     function playSound(audioName) {
       let audio = new Audio(audioName)
@@ -267,9 +368,13 @@ function resp4() {
     }
     playSound('audio/jumpscaresFnaf3.mp3')
     erro++
+    
+    A4.style.display = 'none'
+    l4.style.display = 'none'
+    ret.style.backgroundColor = '#FF0B4594'
   }
   if (c == 6) {
-    alert('certo')
+    ret.style.backgroundColor = '#0BFF4554'
     hora.innerHTML = '06:00'
     pontos++
   }
