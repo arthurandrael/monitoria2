@@ -108,6 +108,10 @@ function Back() {
 function Ligar1() {
   doorL.src = 'imgs/doorLOn.jpeg'
   document.querySelector('.alternativa').style.display = 'block'
+  document.querySelector('#A1').style.display = 'block'
+  document.querySelector('#A2').style.display = 'none'
+  document.querySelector('#A3').style.display = 'none'
+  document.querySelector('#A4').style.display = 'none'
   
   function playSound(audioName) {
     let audio = new Audio(audioName)
@@ -118,6 +122,12 @@ function Ligar1() {
 }
 function Ligar2() {
   doorL.src = 'imgs/doorROn.jpeg'
+  document.querySelector('.alternativa').style.display = 'block'
+    document.querySelector('#A2').style.display = 'block'
+    document.querySelector('#A1').style.display = 'none'
+    document.querySelector('#A3').style.display = 'none'
+    document.querySelector('#A4').style.display = 'none'
+
   
   function playSound(audioName) {
     let audio = new Audio(audioName)
@@ -130,6 +140,11 @@ function Ligar2() {
 
 function Ligar3() {
   doorL.src = 'imgs/bedOn.gif'
+  document.querySelector('.alternativa').style.display = 'block'
+  document.querySelector('#A3').style.display = 'block'
+  document.querySelector('#A1').style.display = 'none'
+  document.querySelector('#A2').style.display = 'none'
+  document.querySelector('#A4').style.display = 'none'
   
   
   function playSound(audioName) {
@@ -150,6 +165,11 @@ function Ligar3() {
 }
 function Ligar4() {
   doorL.src = 'imgs/wardrobeOn.jpeg'
+  document.querySelector('.alternativa').style.display = 'block'
+  document.querySelector('#A4').style.display = 'block'
+  document.querySelector('#A1').style.display = 'none'
+  document.querySelector('#A3').style.display = 'none'
+  document.querySelector('#A2').style.display = 'none'
   
   function playSound(audioName) {
     let audio = new Audio(audioName)
