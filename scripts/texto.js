@@ -7,130 +7,103 @@ var A4 = document.querySelector('#A4')
 var h = 0
 var hora =document.querySelector('#hora')
 var correta = 0
+var resposta = ''
 
 
-function resp1() {
-  if(c===1) {
-    alert('Errado')
+
+
+
+function resp1(){
+  resposta = 'A1'
+  
+  if(c==1) {
+    alert('errado')
   }
-}
-function resp2() {
-  if (c === 1) {
-    alert('Errado')
-  }
-}
-function resp3() {
-  if (c === 1) {
-    alert('Errado')
-  }
-}
-function resp4() {
-  if (c === 1) {
+  if(c==2) {
     alert('certo')
   }
-}
-
-function resp1() {
-  if(c===2) {
-    alert('cert9')
+  if(c==3){
+    alert('certo')
   }
-}
-function resp2() {
-  if (c === 2) {
-    alert('Errado')
+  if(c==4) {
+    alert('errado')
   }
-}
-function resp3() {
-  if (c === 2) {
-    alert('Errado')
+  if(c==5){
+    alert('errado')
   }
-}
-function resp4() {
-  if (c === 2) {
+  if(c==6){
     alert('errado')
   }
 }
 
-function resp1() {
-  if(c===3) {
+
+function resp2() {
+  resposta = 'A2'
+  
+  if(c==1) {
+    alert('errado')
+  }
+  if (c == 2) {
+    alert('errado')
+  }
+  if (c == 3) {
+    alert('errado')
+  }
+  if (c == 4) {
+    alert('errado')
+  }
+  if (c == 5) {
     alert('certo')
   }
-}
-function resp2() {
-  if (c === 3) {
-    alert('Errado')
-  }
-}
-function resp3() {
-  if (c === 3) {
-    alert('Errado')
-  }
-}
-function resp4() {
-  if (c === 3) {
-    alert('')
+  if (c == 6) {
+    alert('errado')
   }
 }
 
-function resp1() {
-  if(c===4) {
-    alert('Errado')
-  }
-}
-function resp2() {
-  if (c === 4) {
-    alert('Errado')
-  }
-}
+
 function resp3() {
-  if (c === 4) {
+  resposta = 'A3'
+  
+  if(c==1) {
+    alert('errado')
+  }
+  if (c == 2) {
+    alert('errado')
+  }
+  if (c == 3) {
+    alert('errado')
+  }
+  if (c == 4) {
     alert('certo')
   }
-}
-function resp4() {
-  if (c === 4) {
-    alert('')
+  if (c == 5) {
+    alert('errado')
+  }
+  if (c == 6) {
+    alert('errado')
   }
 }
 
-function resp1() {
-  if(c===5) {
-    alert('Errado')
-  }
-}
-function resp2() {
-  if (c === 5) {
+
+function resp4() {
+  resposta = 'A4'
+  
+  if(c==1) {
     alert('certo')
   }
-}
-function resp3() {
-  if (c === 5) {
-    alert('Errado')
+  if (c == 2) {
+    alert('errado')
   }
-}
-function resp4() {
-  if (c === 5) {
-    alert('o')
+  if (c == 3) {
+    alert('errado')
   }
-}
-
-function resp1() {
-  if(c===6) {
-    alert('Errado')
+  if (c == 4) {
+    alert('errado')
   }
-}
-function resp2() {
-  if (c === 6) {
-    alert('Errado')
+  if (c == 5) {
+    alert('errado')
   }
-}
-function resp3() {
-  if (c === 6) {
-    alert('Errado')
-  }
-}
-function resp4() {
-  if (c === 6) {
+  if (c == 6) {
     alert('certo')
   }
 }
@@ -221,6 +194,9 @@ function Monitor() {
       A2.innerHTML = 'B) orientar procedimentos.'
       A3.innerHTML = 'C) refutar um argumento.'
       A4.innerHTML = 'D) trazer uma informação.'
+      
+      
+      
       
     }
     if (c === 2) {

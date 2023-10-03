@@ -99,6 +99,12 @@ function Back() {
   document.querySelector('#wardrobe').style.display = 'block'
   document.querySelector('#monitorIcon').style.display = "block"
   document.querySelector('.options2').style.display = "none"
+  
+  
+  document.querySelector('#A1').style.display = 'none'
+  document.querySelector('#A2').style.display = 'none'
+  document.querySelector('#A3').style.display = 'none'
+  document.querySelector('#A4').style.display = 'none'
 }
 
 
@@ -182,6 +188,7 @@ function Ligar4() {
 
 function Desligar1() {
   doorL.src = 'imgs/doorL.jpg'
+  document.querySelector('#A1').style.display = 'none'
   
   function playSound(audioName) {
     let audio = new Audio(audioName)
@@ -194,6 +201,7 @@ function Desligar1() {
 
 function Desligar2() {
   doorL.src = 'imgs/doorR.jpg'
+  document.querySelector('#A2').style.display = 'none'
   
   function playSound(audioName) {
     let audio = new Audio(audioName)
@@ -206,6 +214,7 @@ function Desligar2() {
 
 function Desligar3() {
   doorL.src = 'imgs/BedOff.jpg'
+  document.querySelector('#A3').style.display = 'none'
   
   function playSound(audioName) {
     let audio = new Audio(audioName)
@@ -218,6 +227,7 @@ function Desligar3() {
 
 function Desligar4() {
   doorL.src = 'imgs/wardrobeOff.jpeg'
+  document.querySelector('#A4').style.display = 'none'
   
   function playSound(audioName) {
     let audio = new Audio(audioName)
