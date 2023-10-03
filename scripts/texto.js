@@ -57,7 +57,7 @@ function resp1() {
     erro++
   }
   if(c==5){
-    alert('errado')
+    
     erro++
   }
   if(c==6){
@@ -229,7 +229,15 @@ function resp4() {
     erro++
   }
   if (c == 4) {
-    alert('errado')
+    doorL.currentTime = 2
+    doorL.src = "jumpscares/jumpHBonnie2.gif"
+    
+    function playSound(audioName) {
+      let audio = new Audio(audioName)
+      audio.play()
+    
+    }
+    playSound('audio/jumpscaresFnaf4.mp3')
     erro++
   }
   if (c == 5) {
