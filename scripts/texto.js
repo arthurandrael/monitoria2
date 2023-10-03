@@ -96,6 +96,8 @@ function resp2() {
     alert('errado')
     erro++
   }
+  
+  
   if (c == 4) {
     alert('errado')
     erro++
