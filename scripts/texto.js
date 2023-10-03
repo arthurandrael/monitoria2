@@ -45,7 +45,15 @@ function resp1() {
     hora.innerHTML = '03:00'
   }
   if(c==4) {
-    alert('errado')
+    doorL.currentTime = 2
+    doorL.src = "jumpscares/jumpHBonnie1.gif"
+    
+    function playSound(audioName) {
+      let audio = new Audio(audioName)
+      audio.play()
+    
+    }
+    playSound('audio/jumpscaresFnaf4.mp3')
     erro++
   }
   if(c==5){
