@@ -93,7 +93,15 @@ function resp2() {
   
   
   if (c == 3) {
-    alert('errado')
+    doorL.currentTime = 2
+    doorL.src = "jumpscares/jumpPhanChica.gif"
+    
+    function playSound(audioName) {
+      let audio = new Audio(audioName)
+      audio.play()
+    
+    }
+    playSound('audio/jumpscaresFnaf3.mp3')
     erro++
   }
   
