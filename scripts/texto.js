@@ -7,7 +7,7 @@ var A4 = document.querySelector('#A4')
 var h = 0
 var hora =document.querySelector('#hora')
 var pontos = 0
-var erros = 0
+var erro = 0
 var resposta = ''
 var c = 0
 
@@ -79,6 +79,15 @@ function resp2() {
   
   
   if (c == 2) {
+    doorL.currentTime = 2
+    doorL.src = "jumpscares/jumpSpringtrap.gif"
+    
+    function playSound(audioName) {
+      let audio = new Audio(audioName)
+      audio.play()
+    
+    }
+    playSound('audio/jumpscaresFnaf3.mp3')
     erro++
   }
   
@@ -122,7 +131,15 @@ function resp3() {
     erro++
   }
   if (c == 2) {
-    alert('errado')
+    doorL.currentTime = 2
+    doorL.src = "jumpscares/jumpMangle.gif"
+    
+    function playSound(audioName) {
+      let audio = new Audio(audioName)
+      audio.play()
+    
+    }
+    playSound('audio/jumpscaresFnaf4.mp3')
     erro++
   }
   if (c == 3) {
