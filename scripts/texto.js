@@ -134,14 +134,14 @@ function resp3() {
   
   if (c == 2) {
     doorL.currentTime = 2
-    doorL.src = "jumpscares/jumpMangle.gif"
+    doorL.src = "jumpscares/jumpPhantonBB.gif"
     
     function playSound(audioName) {
       let audio = new Audio(audioName)
       audio.play()
     
     }
-    playSound('audio/jumpscaresFnaf4.mp3')
+    playSound('audio/jumpscaresFnaf3.mp3')
     erro++
   }
   if (c == 3) {
