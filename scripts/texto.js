@@ -153,7 +153,15 @@ function resp3() {
     erro++
   }
   if (c == 3) {
-    alert('errado')
+    doorL.currentTime = 2
+    doorL.src = "jumpscares/jumpPuppet.gif"
+    
+    function playSound(audioName) {
+      let audio = new Audio(audioName)
+      audio.play()
+    
+    }
+    playSound('audio/jumpscaresFnaf2.mp3')
     erro++
   }
   if (c == 4) {
@@ -193,7 +201,7 @@ function resp4() {
     erro++
   }
   if (c == 3) {
-    alert('errado')
+    
     erro++
   }
   if (c == 4) {
