@@ -581,7 +581,7 @@ function resp2() {
   
   if (c === 14) {
     doorL.currentTime = 2
-    doorL.src = "jumpscares/jumpFred.gif"
+    doorL.src = "jumpscares/jumpFred2.gif"
     
     function playSound(audioName) {
       let audio = new Audio(audioName)
@@ -1970,6 +1970,8 @@ function meuLoop(i) {
   }
   
   
+  
+  
 
     
   /*if(i === 10)  {
@@ -2028,6 +2030,9 @@ function restart() {
   plac.style.display = 'none'
   hora = 0
   erro = 0
+  
+  
+  
 }
 
 var plac = document.querySelector('#placar')
