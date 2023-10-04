@@ -2033,6 +2033,74 @@ function restart() {
   
   
   
+  function meuLoop(i) {
+    // cria uma função de loop
+    setTimeout(function() {
+      // chama um setTimeout de 1s quando o loop é chamado// o seu código aqui
+      console.log(i)
+      i++; // incrementa o contador
+      if (i < 1439) {
+        // se o contador < 10, chama a função de loop novamente
+        meuLoop(i); // ... de novo, que vai disparar outro setTimeout
+      }
+    }, 1000);
+  
+    if (i === 1437) {
+      doorL.currentTime = 0.2
+      doorL.src = "jumpscares/f3.gif"
+  
+      document.querySelector('.options').style.display = 'none'
+      document.querySelector('#time').style.display = 'none'
+  
+      plac.style.display = 'block'
+      point.innerHTML = 'Pontos: ' + pontos
+      err.innerHTML = 'Erros: ' + erro
+  
+  
+      function myLoop(j) {
+        // cria uma função de loop
+        setTimeout(function() {
+          // chama um setTimeout de 1s quando o loop é chamado// o seu código aqui
+          console.log(j)
+          j++; // incrementa o contador
+          if (j < 10) {
+            // se o contador < 10, chama a função de loop novamente
+            myLoop(j); // ... de novo, que vai disparar outro setTimeout
+          }
+        }, 1000);
+  
+        if (j === 9) {
+          doorL.currentTime = 0.2
+          doorL.src = "jumpscares/jf.gif"
+  
+          document.querySelector('#recomecar').style.display = 'block'
+  
+  
+        }
+      }
+      myLoop(1);
+    }
+  
+  
+  
+  
+  
+  
+    /*if(i === 10)  {
+      function playSound(audioName) {
+        let audio = new Audio(audioName)
+        audio.play()
+      
+      }
+      playSound('audio/jumpscaresFnaf4.mp3')
+    }*/
+  }
+  
+  
+  
+  meuLoop(1); // inicia o loop
+  
+  
 }
 
 var plac = document.querySelector('#placar')
