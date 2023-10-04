@@ -105,6 +105,9 @@ function Back() {
   document.querySelector('#A2').style.display = 'none'
   document.querySelector('#A3').style.display = 'none'
   document.querySelector('#A4').style.display = 'none'
+  
+  
+  document.querySelector('#back').style.backgroundColor = 'transparent'
 }
 
 
@@ -187,7 +190,7 @@ function Ligar4() {
 
 
 function Desligar1() {
-  doorL.src = 'imgs/doorL.jpg'
+  doorL.src = "imgs/doorL.jpg"
   document.querySelector('#A1').style.display = 'none'
   
   function playSound(audioName) {
@@ -232,7 +235,7 @@ function Desligar3() {
 
 
 function Desligar4() {
-  doorL.src = 'imgs/wardrobeOff.jpeg'
+  doorL.src = "imgs/wardrobeOff.jpeg"
   document.querySelector('#A4').style.display = 'none'
   
   function playSound(audioName) {
