@@ -11,6 +11,7 @@ var l4 = document.querySelector('#lanterna4')
 var ret = document.querySelector('#back')
 var h = 0
 var hora =document.querySelector('#hora')
+var ganh = 0
 var quest = document.querySelector('#time')
 var pontos = 0
 var erro = 0
@@ -737,6 +738,7 @@ function resp2() {
   if (c === 24) {
     ret.style.backgroundColor = '#0BFF4554'
     hora.innerHTML = '07:00'
+    ganh = 1
     pontos++
   }
 }
@@ -911,6 +913,7 @@ function resp3() {
   if (c == 12) {
     ret.style.backgroundColor = '#0BFF4554'
     hora.innerHTML = '07:00'
+    ganh = 1
     pontos++
   }
   
@@ -1985,12 +1988,16 @@ meuLoop(1); // inicia o loop
 
 
 
-if(hora==='07:00') {
+if(ganh==1) {
   pontos=0
   erro=0
+  ganh = 0
+  
+  alert('ganhou')
   
   document.querySelector('.options').style.display = 'none'
   document.querySelector('#time').style.display = 'none'
+  document.querySelector('#recomecar')
   
   plac.style.display = 'block'
   point.innerHTML = 'Pontos: ' + pontos
@@ -2017,6 +2024,10 @@ function restart() {
   document.querySelector('#monitorIcon').style.display = "block"
   document.querySelector('.options').style.display = "block"
   document.querySelector('#recomecar').style.display = 'none'
+  quest.style.display = 'block'
+  plac.style.display = 'none'
+  hora = 0
+  erro = 0
 }
 
 var plac = document.querySelector('#placar')
