@@ -1930,11 +1930,16 @@ function meuLoop(i) {
     }
   }, 1000);
   
-  if(i === 1435) {
+  if(i === 1437) {
     doorL.currentTime = 0.2
     doorL.src = "jumpscares/f3.gif"
     
     document.querySelector('.options').style.display = 'none'
+    document.querySelector('#time').style.display = 'none'
+    
+    plac.style.display = 'block'
+    point.innerHTML = 'Pontos: ' + pontos
+    err.innerHTML = 'Erros: ' + erro
     
     
     function myLoop(j) {
@@ -1952,6 +1957,10 @@ function meuLoop(i) {
       if (j === 9) {
         doorL.currentTime = 0.2
         doorL.src = "jumpscares/jf.gif"
+        
+        document.querySelector('#recomecar').style.display = 'block'
+        
+        
       }
   }
     myLoop(1);
@@ -1980,6 +1989,13 @@ if(hora==='07:00') {
   pontos=0
   erro=0
   
+  document.querySelector('.options').style.display = 'none'
+  document.querySelector('#time').style.display = 'none'
+  
+  plac.style.display = 'block'
+  point.innerHTML = 'Pontos: ' + pontos
+  err.innerHTML = 'Erros: ' + erro
+  
   function playSound(audioName) {
       var audio = new Audio(audioName)
       audio.play()
@@ -1992,3 +2008,17 @@ if(hora==='07:00') {
 /*===========÷=÷÷=========÷====÷÷÷÷÷÷÷÷÷*/
 
 
+function restart() {
+  document.querySelector('#quarto').src = "imgs/quarto.jpeg"
+  document.querySelector('#left').style.display = 'block'
+  document.querySelector('#right').style.display = 'block'
+  document.querySelector('#bed').style.display = 'block'
+  document.querySelector('#wardrobe').style.display = 'block'
+  document.querySelector('#monitorIcon').style.display = "block"
+  document.querySelector('.options').style.display = "block"
+  document.querySelector('#recomecar').style.display = 'none'
+}
+
+var plac = document.querySelector('#placar')
+var point = document.querySelector('#pont')
+var err = document.querySelector('#errs')
