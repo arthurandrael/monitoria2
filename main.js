@@ -36,6 +36,7 @@ function Left() {
   document.querySelector('#lanterna3').style.display = 'none'
   document.querySelector('#lanterna4').style.display = 'none'
   monitorb.style.display = 'none'
+  texts.style.display = 'none'
 }
 
 
@@ -53,6 +54,7 @@ function Right() {
   document.querySelector('#lanterna3').style.display = 'none'
   document.querySelector('#lanterna4').style.display = 'none'
   monitorb.style.display = 'none'
+  texts.style.display = 'none'
 }
 
 
@@ -69,6 +71,7 @@ function Bed() {
   document.querySelector('#lanterna2').style.display = 'none'
   document.querySelector('#lanterna3').style.display = 'block'
   document.querySelector('#lanterna4').style.display = 'none'
+  texts.style.display = 'none'
 }
 
 
@@ -85,6 +88,7 @@ function Wardrobe() {
   document.querySelector('#lanterna2').style.display = 'none'
   document.querySelector('#lanterna3').style.display = 'none'
   document.querySelector('#lanterna4').style.display = 'block'
+  texts.style.display = 'none'
 }
 
 
