@@ -2,6 +2,26 @@ var game = document.querySelector('.quarto')
 game.style.display = 'none'
 
 
+function ambience() {
+  function playSound(audioName) {
+    let audio = new Audio(audioName)
+    audio.play()
+  
+  }
+  playSound('audio/ambiente1.mp3')
+}
+
+
+function start() {
+  function playSound(audioName) {
+    let audio = new Audio(audioName)
+    audio.play()
+  
+  }
+  playSound('audio/wAffton.mp3')
+}
+
+
 
 
 var monitorb = document.querySelector("#gif")
