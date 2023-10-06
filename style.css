@@ -202,13 +202,13 @@ body {
 }*/
 
 
-.intro {
+.intro, .intro > img{
   width: 100vw;
   height: 100vh;
   position: absolute;
   top: 0;
-  background: url("imgs/intro.gif") center center no-repeat;
-  background-size: cover;
+  /*background: url("imgs/intro.gif") center center no-repeat;
+  background-size: cover;*/
 }
 
 .intro h1 {
@@ -216,9 +216,12 @@ body {
   font-size: 3rem;
   font-weight: lighter;
   text-align: right;
-  padding: 2% 5%;
+  right: 5%;
+  top: 2%;
   letter-spacing: .5rem;
   line-height: 4rem;
+  z-index: 1;
+  position: absolute;
 }
 
 .intro a {
