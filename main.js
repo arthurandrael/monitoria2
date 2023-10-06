@@ -1,3 +1,9 @@
+var game = document.querySelector('.quarto')
+game.style.display = 'none'
+
+
+
+
 var monitorb = document.querySelector("#gif")
 var texts = document.querySelector('.textos')
 var doorL = document.querySelector('#quarto')

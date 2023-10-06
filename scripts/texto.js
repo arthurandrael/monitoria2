@@ -1933,7 +1933,7 @@ function meuLoop(i) {
     }
   }, 1000);
   
-  if(i === 1437) {
+  if(i === 1435) {
     doorL.currentTime = 0.2
     doorL.src = "jumpscares/f3.gif"
     
