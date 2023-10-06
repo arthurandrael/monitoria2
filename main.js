@@ -12,6 +12,7 @@ function ambience() {
 }
 
 
+
 function start() {
   function playSound(audioName) {
     let audio = new Audio(audioName)
