@@ -1490,6 +1490,16 @@ function Monitor() {
 
   
   if (monitorb.style.display == "block") {
+    
+    if (c === 21) {
+      function playSound(audioName) {
+        let audio = new Audio(audioName)
+        audio.play()
+      }
+      playSound('audio/NightLaugh.mp3')
+    }
+    
+    
     c--
     monitorb.style.display = "none"
     texts.style.display = 'none'
@@ -1503,6 +1513,19 @@ function Monitor() {
   }
 
   else {
+    
+    if (c === 4 || c === 14) {
+      function playSound(audioName) {
+        let audio = new Audio(audioName)
+        audio.play()
+    
+      }
+      playSound('audio/freddyLaugh.mp3')
+      erro++
+    }
+    
+    
+    
     monitorb.style.display = "block"
     texts.style.display = 'block'
 
@@ -2044,6 +2067,10 @@ function restart() {
         meuLoop(i); // ... de novo, que vai disparar outro setTimeout
       }
     }, 1000);
+    
+    
+    
+    
   
     if (i === 1437) {
       doorL.currentTime = 0.2
@@ -2106,3 +2133,7 @@ function restart() {
 var plac = document.querySelector('#placar')
 var point = document.querySelector('#pont')
 var err = document.querySelector('#errs')
+
+
+
+  

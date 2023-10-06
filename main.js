@@ -1,5 +1,6 @@
 var game = document.querySelector('.quarto')
 game.style.display = 'none'
+var intro = document.querySelector('.intro')
 
 
 function ambience() {
@@ -20,6 +21,9 @@ function start() {
   
   }
   playSound('audio/wAffton.mp3')
+  
+  intro.style.display = 'none'
+  game.style.display = 'block'
 }
 
 
@@ -64,6 +68,8 @@ function Left() {
   document.querySelector('#lanterna4').style.display = 'none'
   monitorb.style.display = 'none'
   texts.style.display = 'none'
+  
+  
 }
 
 
@@ -187,7 +193,7 @@ function Ligar3() {
   document.querySelector('#A4').style.display = 'none'
   
   
-  function playSound(audioName) {
+  /*function playSound(audioName) {
     let audio = new Audio(audioName)
     audio.loop = 'false'
     audio.play()
@@ -200,7 +206,7 @@ function Ligar3() {
     audio.play()
   
   }
-  playSound('audio/flash.mp3')
+  playSound('audio/flash.mp3')*/
   
 }
 function Ligar4() {
