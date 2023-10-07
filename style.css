@@ -213,13 +213,14 @@ body {
 
 .intro h1 {
   color: red;
-  font-size: 3rem;
+  /*font-size: 3rem;*/
+  font-size: 6vw;
   font-weight: lighter;
   text-align: right;
   right: 5%;
   top: 2%;
-  letter-spacing: .5rem;
-  line-height: 4rem;
+  letter-spacing: 1vw;
+  line-height: 8vw;
   z-index: 1;
   position: absolute;
 }
@@ -231,7 +232,7 @@ body {
   top: 50%;
   left: 15%;
   position: absolute;
-  font-size: 1.5rem;
+  font-size: 3vw;
 }
 .intro a:hover {
   text-decoration: underline;
@@ -239,7 +240,7 @@ body {
 .intro span {
   color: red;
   font-family: monospace;
-  font-size: 3rem;
+  font-size: 6vw;
   position: absolute;
   bottom: 1%;
   left: 7%;
@@ -249,7 +250,7 @@ small {
   color: red;
   font-family: monospace;
   position: absolute;
-  font-size: .7rem;
+  font-size: 1.4vw;
   right: 3%;
   bottom: 1%;
 }
