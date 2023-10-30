@@ -1474,7 +1474,7 @@ function resp4() {
 
 
 
-
+var dsc = document.querySelector('#h1')
 var tit = document.querySelector('h1')
 var txt = document.querySelector('#texto')
 var qst = document.querySelector('#quest')
@@ -1491,7 +1491,7 @@ function Monitor() {
   
   if (monitorb.style.display == "block") {
     
-    if (c === 21) {
+    if (c == 8) {
       function playSound(audioName) {
         let audio = new Audio(audioName)
         audio.play()
@@ -1545,240 +1545,268 @@ function Monitor() {
     
     
     if (c === 1){
-      tit.innerHTML = "Qual a origem do doce brigadeiro?"
+      dsc.innerHTML = "D15 Estabelecer relações lógico - discursivas presentes no texto, marcadas por conjunções, advérbios, etc."
       
-      txt.innerHTML = "Em 1946, seriam realizadas as primeiras eleições diretas para presidente após os anos do“ Estado Novo”, de Getúlio Vargas.O candidato da aliança PTB / PSD, Eurico Gaspar Dutra, venceu com relativa folga.Mas o título de maior originalidade na campanha ficou para as correligionárias do candidato derrotado, Eduardo Gomes(da UDN).Brigadeiro da Aeronáutica, com pinta de galã, Eduardo Gomes tinha um apoio, digamos, entusiasmado.Para fazer o“ corpo - a - corpo” com o eleitorado, senhoras da sociedade saiam às ruas convocando as mulheres a votar em Gomes, com o slogan: “Vote no brigadeiro.Ele é bonito e solteiro”.Não satisfeitas ainda promoviam almoços e chás, nos quais serviam um irresistível docinho coberto com chocolate granulado.Ao qual deram o nome, claro, de brigadeiro."
+      tit.innerHTML = "O Berço da filosofia e da democracia"
       
-      qst.innerHTML = "A finalidade desse gênero de texto é"
+      txt.innerHTML = "Atenas pode-se orgulhar de ter sido o berço da filosofia, conhecimento que superou os mitos na tentativa de se explicar o mundo. Nas ruas da capital grega, circularam pensadores como Sócrates, Platão e Aristóteles, filósofos cujas ideias tornaram-se baluartes para a sociedade ocidental, apesar dos milhares de anos que nos separam deles. Além disso, foi lá que se viveu uma experiência até então inédita de democracia, sistema político defendido hoje nos quatro cantos do planeta.  Atenas viu nascer a democracia, o primeiro regime político a pregar a igualdade de direito entre todos os homens, independentemente da classe social. Mesmo que ele não tenha funcionado a pleno vapor na Antiga Grécia, foi lá que o sistema nasceu e dessa experiência partiram as ideias e modelos subsequentes. Sem a ousadia ateniense de pregar e defender valores até então nunca cogitados, provavelmente, o rumo da Humanidade teria sido diferente."
+      
+      qst.innerHTML = "No fragmento “<strong>Além disso</strong>, foi lá que se viveu uma experiência até então inédita de democracia”, a expressão destacada tem um valor semântico de"
       
       
       correta = A4
       
-      A1.innerHTML = 'A) propor mudanças.'
-      A2.innerHTML = 'B) orientar procedimentos.'
-      A3.innerHTML = 'C) refutar um argumento.'
-      A4.innerHTML = 'D) trazer uma informação.'
+      A1.innerHTML = 'D) oposição'
+      A2.innerHTML = 'C) consequência'
+      A3.innerHTML = 'B) comparação.'
+      A4.innerHTML = 'A) acréscimo.'
       
       
       
       
     }
     if (c === 2) {
-      tit.innerHTML = 'PARA QUE SERVE A FEBRE'
+      dsc.innerHTML = "D16 Identificar efeitos de ironia ou humor em textos variados."
       
-      txt.innerHTML = "A febre é um sinal de alerta de que algo vai mal no organismo. Mas cientistas do Roswell Park Center Institute, nos EUA, afirmam que ela é bem mais do que isso. Segundo um artigo publicado por eles na “Nature Immunology”, a temperatura corporal elevada ajuda o sistema de defesa do organismo a identificar a causa de uma infecção e combatê-la.Num estudo com camundongos, eles viram que quando há febre, o número de linfócitos (tipo de célula de defesa) dobra. A febre funcionaria como um gatilho para o corpo se proteger de infecções."
+      tit.innerHTML = 'Anedotinha'
       
-      qst.innerHTML = "O artigo acima tem por finalidade:"
+      txt.innerHTML = "Juquinha foi visitar o Museu Histórico. Aí, cansou de andar, sentou-se numa cadeira belíssima que estava no centro da sala.<br> Veio o guarda:  <br> – Meu filho, não pode sentar nesta cadeira, não. Esta cadeira é de Pedro I. <br> E o Juquinha: <br>  – Não tem problema. Quando ele chegar eu me levanto!"
+      
+      qst.innerHTML = "O humor desse texto está na"
       
       
       correta = A1
       
-      A1.innerHTML = 'B) combater idéias erradas sobre a febre.'
-      A2.innerHTML = 'A) aumentar a nossa compreensão sobre o que é a febre;'
-      A3.innerHTML = 'D) alertar o leitor contra a febre;'
-      A4.innerHTML = 'C) ensinar o leitor a proteger-se das infecções'
+      A1.innerHTML = 'B) resposta de Juquinha.'
+      A2.innerHTML = 'A) atitude de Juquinha'
+      A3.innerHTML = 'C) descrição da cadeira.'
+      A4.innerHTML = 'D) fala do guarda.'
 
     }
     
     if (c===3) {
-      tit.innerHTML = "Mariposas"
+      dsc.innerHTML = "D17 Identificar o efeito de sentido decorrente do uso da pontuação e de outras notações."
+
+      tit.innerHTML = "E a viagem continua..."
       
-      txt.innerHTML = "Numa fábula árabe, as mariposas queriam entender sobre a luz. Elas desejavam saber o segredo de se sentirem tão fascinadas pela chama de uma vela. O que as deslumbrava? Seria a luz ou o calor? Pediram a ajuda da mariposa-rainha. Depois de meditar sobre o assunto, ela aconselhou que cada uma, individualmente, procurasse encontrar a resposta. Todas saíram procurando desvendar o mistério do fogo. Passado algum tempo, uma mariposa voltou cega de um olho, afirmando que havia chegado perto demais e que a luminosidade da vela a tinha ofuscado, e que continuava sem entender os mistérios da luz. Outra voltou com uma asa queimada, reconhecendo que sua experiência não fora satisfatória. Por séculos, as mariposas não entenderam por que a luz as extasiava tanto. Até que um dia uma voou na direção de uma lamparina com tanta determinação que morreu queimada. Nesse dia, a mariposa-rainha falou: “Somente esta mariposa conheceu o mistério do fogo, mas nós nunca saberemos”. Moral: O encontro com o transcendente não pode ser contido na dimensão empírica. [...]"
+      txt.innerHTML = "Depois de rezarmos e cantarmos muito, voltávamos todos para casa e logo chegavam convidados para o almoço, que sempre era especial. Comidas italianas que vovó, a nona, fazia. <br> E todos os adultos matavam saudade da Itália. Ela tinha vindo de lá, de navio, no começo do século, quando meu pai tinha três anos. Mamãe chegou um pouco mais tarde, com seus pais. <br> Depois de moços, conheceram-se no Brasil e se casaram. <br> Durante o almoço, falavam em italiano e tomavam vinho. Era engraçado! Como na missa, não entendíamos nada..."
       
-      qst.innerHTML = 'Qual é o objetivo comunicativo desse texto?'
+      qst.innerHTML = 'Nesse texto, o ponto de exclamação utilizado em “Era engraçado!” (último parágrafo) sugere'
       
       
       correta = A1
       
-      A1.innerHTML = 'B) Transmitir um ensinamento.'
-      A2.innerHTML = 'D) Noticiar um fato'
-      A3.innerHTML = 'C) Criticar uma conduta.'
-      A4.innerHTML = ' A) Persuadir o leitor.'
+      A1.innerHTML = 'D) destaque de um comentário.'
+      A2.innerHTML = 'A) conclusão de uma fala.'
+      A3.innerHTML = 'C) demonstração de satisfação'
+      A4.innerHTML = 'B) contestação de uma situação.'
 
     }
     
     
     if(c===4) {
-      txt.innerHTML = 'O primeiro dia do programa “Mais Médicos” foi marcado por faltas e desistências por parte dos médicos brasileiros. Em algumas cidades de São Paulo e do Rio de Janeiro, nenhum dos profissionais selecionados compareceu às unidades de saúde a que foram alocados — entre os que faltaram, uma parte nem sequer justificou sua ausência. Segundo as secretarias de saúde, alguns profissionais chegaram a comunicar oficialmente sua desistência do programa federal. Na capital carioca, o número de faltosos foi maior do que o de presentes. Eram esperados dezesseis profissionais, mas para o azar da população e descrédito do programa, só seis se apresentaram. Todos os que trabalharão na cidade são brasileiros e apenas um passa pelo curso de requalificação por ter se formado na Espanha — o que explica a ausência. '
+      dsc.innerHTML = "D18 Reconhecer o efeito de sentido decorrente da escolha de uma determinada palavra ou expressão."
       
-      qst.innerHTML = 'O proposito do texto é '
+      txt.innerHTML = 'Às 15:03 em 16 janeiro 2 009, Lourdes Alves disse... <br> Olá Carla, espero te encontrar no próximo dia 12 de fevereiro. Gosto da possibilidade do encontro presencial e tenho certeza que temos figurinhas para trocar. <br> Um forte abraço e bem-vinda. <br> Às 14:01 em 17 janeiro 2 009, Carla Amaral disse... <br> Sim, nem que chova canivete, vou estar presente no encontro em fevereiro. <br> Me encontro regularmente com César, Mara, Rachel e Marília (menos). Neste final de semana vamos juntos para Socorro... estão todos bem. <br> Abraços <br> Carla'
+      
+      qst.innerHTML = 'A expressão “nem que chova canivete” (5° parágrafo) sugere'
       
       
       correta = A3
       
-      A1.innerHTML = 'C) criticar'
-      A2.innerHTML = 'D) ensinar'
-      A3.innerHTML = 'A) informar'
-      A4.innerHTML = 'B) comover'
+      A1.innerHTML = 'D) neutralidade'
+      A2.innerHTML = 'A) brutalidade.'
+      A3.innerHTML = 'B) certeza'
+      A4.innerHTML = 'C) mudança.'
     }
     
     if(c===5) {
-      tit.innerHTML = 'Qual é o órgão mais dispensável do corpo humano?'
+      dsc.innerHTML = "D19 Reconhecer o efeito de sentido decorrente da exploração de recursos ortográficos e / ou morfossintáticos."
       
-      txt.innerHTML = 'Se você der o azar de lesionar um órgão, torça para ser o baço. Ele tem lá suas funções, como remover os glóbulos vermelhos velhos demais e produzir parte dos anticorpos que nos protegem de vírus e bactérias. Mas dá para viver sem ele, o que não rola sem coração, pulmões, fígado, estômago, pâncreas ou intestino – sem os dois rins também não dá. Quando alguém sofre uma pancada forte na barriga e danifica o baço a ponto de ele precisar ser removido, o fígado se encarrega da “limpeza” dos glóbulos vermelhos. Já a imunidade da pessoa fica debilitada com a menor produção de anticorpos.'
+      tit.innerHTML = 'A raposa e as uvas'
       
-      qst.innerHTML = 'O objetivo desse texto é'
+      txt.innerHTML = 'Certa raposa esfaimada encontrou uma parreira carregadinha de lindos cachos maduros, coisas de fazer vir água à boca. Mas tão altos que nem pulando. <br> O matreiro bicho torceu o focinho: <br> – Estão verdes – murmurou – Uvas verdes, só para cachorros. <br> E foi-se. <br> Nisto deu um vento e uma folha caiu. <br> A raposa, ouvindo o barulhinho, voltou depressa e pôs-se a farejar... <br> Quem desdenha quer comprar.'
+      
+      qst.innerHTML = 'Nesse texto, a palavra “carregadinha” tem a ver com'
       
       
       correta = A2
       
-      A1.innerHTML = 'A) mostrar como funciona nosso corpo.'
-      A2.innerHTML = 'B) dar uma informação de cunho científico.'
-      A3.innerHTML = 'C) oferecer ensinamentos sobre anticorpos.'
-      A4.innerHTML = 'D) explicar como se adquire imunidade.'
+      A1.innerHTML = 'A) o sabor das frutas.'
+      A2.innerHTML = 'B) a quantidade de uvas produzidas.'
+      A3.innerHTML = 'C) o tamanho dos cachos.'
+      A4.innerHTML = 'D) o estado das uvas: madurinhas.'
     }
     
     if(c===6) {
-      tit.innerHTML = 'O coração roubado'
+      dsc.innerHTML = "D20 Reconhecer diferentes formas de tratar uma informação na comparação de textos que tratam do mesmo tema, em função das condições em que ele foi produzido e daquelas em que será recebido"
       
-      txt.innerHTML = '“O Coração Roubado e outras crônicas” é uma obra capaz de tornar a leitura parte da vida do leitor, pois está repleta de textos curtos, fáceis de serem compreendidos, associando diversão e reflexão.Assim, o leitor se prende ao que está escrito e ainda é levado a questionar sobre as ocorrências do cotidiano nas quais ele está inserido.O leitor é levado a refletir sobre suas próprias ações.Em alguma das histórias ele vai se encaixar. Escritas de maneira inteligente e instigante, as 26 crônicas de Marcos Rey apresentam uma série de tipos inesquecíveis, vivendo situações as mais diversas.Nas páginas de Coração Roubado, você encontrará cenas hilariantes, absurdas, constrangedoras, delicadas...presentes no cotidiano de qualquer pessoa, em qualquer lugar.[...]'
+      tit.innerHTML = 'Texto I'
       
-      qst.innerHTML = 'Qual é a finalidade desse texto?'
+      txt.innerHTML = '“Sou completamente a favor da flexibilização das relações trabalhistas, pois a velhís¬sima legislação brasileira, além de anacrônica, vem comprometendo seriamente a nossa competitividade em nível global.” <br><br><strong>Texto II</strong><br><br>“É uma falácia dizer que com a eliminação dos direitos trabalhistas se criarão mais empregos. O trabalhador brasileiro já é por demais castigado para suportar mais essa provocação.”'
+      
+      qst.innerHTML = 'Os textos acima tratam do mesmo assunto, ou seja, da relação entre patrão e em¬pregado. Os dois se diferenciam, porém, pela abordagem temática. O texto II em relação ao texto I apresenta uma:'
       
       
       correta = A4
       
-      A1.innerHTML = 'D) Divulgar um filme'
-      A2.innerHTML = 'A) Divertir o leitor.'
-      A3.innerHTML = 'C) Divulgar um filme'
-      A4.innerHTML = 'B) Expor uma análise crítica.'
+      A1.innerHTML = '(D) aceitação.'
+      A2.innerHTML = '(B) semelhança.'
+      A3.innerHTML = '(A) ironia.'
+      A4.innerHTML = '(C) oposição.'
     }
     
     
     if(c===7) {
-      tit.innerHTML = 'O amor por entre o verde'
+      dsc.innerHTML = "D21 Reconhecer posições distintas entre duas ou mais opiniões relativas ao mesmo fato ou ao mesmo tema."
       
-      txt.innerHTML = 'Não é sem freqüência que à tarde, chegando à janela, eu vejo um casalzinho de brotos que vem namorar sobre a pequenina ponte de balaustrada branca que há no parque. Ela é uma menina de uns 13 anos, o corpo elástico metido num blues jeans e num suéter folgado, os cabelos puxados para trás num rabinho de cavalo que está sempre a balançar para todos os lados; ele, um garoto de, no máximo, dezesseis, esguio, com pastas de cabelo a lhe tombar sobre a testa e um ar de quem descobriu a fórmula da vida. Uma coisa eu lhes asseguro: eles são lindos, e ficam montados, um em frente ao outro, no corrimão da colunata, os joelhos a se tocarem, os rostos a se buscarem a todo momento para pequenos segredos, pequenos carinhos, pequenos beijos. São, na sua extrema juventude, a coisa mais antiga que há no parque, incluindo as velhas árvores que por ali espaçam sua verde sombra; e as momices e brincadeiras que se fazem dariam para escrever todo um tratado sobre a arquelogia do amor, pois têm uma tal ancestralidade que nunca se há de saber a quantos milênios remontam [...]'
+      tit.innerHTML = 'Texto 1'
       
-      qst.innerHTML = 'Nos trechos abaixo, há uma opinião em'
+      txt.innerHTML = 'Estamos vendo a consolidação de um grande diretor. Estamos vendo DiCaprio em sua melhor atuação na carreira. Isso não é pouco! [...] Elenco inspirado, forte, físico. [...] Vá ao cinema e, enquanto admira o belo trabalho de fotografia, [...] entregue-se por inteiro. [...] “O Regresso” vai te dar a opção de escolher o que é o bem e o que é o mal. [...]  <br>George F.   <br><br><strong>Texto 2<strong><br><br>  Muito chato! Filme sem emoção, monótono e sem nexo em muitas partes. [...] Não vale a pena assistir. Um dos piores filmes que já assisti. Me desculpem os experts em cinema, mas não passa sentimento nenhum na trama. A fotografia é linda, mas só isso!  <br>Neide Santos'
+      
+      qst.innerHTML = 'Em relação ao filme “O Regresso”, os autores desses textos'
       
       
       correta = A2
       
-      A1.innerHTML = 'A) “...eu vejo um casalzinho de brotos...”.'
-      A2.innerHTML = 'B) “Uma coisa eu lhes asseguro: Eles são lindos,”.'
-      A3.innerHTML = 'C) “...os rostos a se buscarem a todo momento...”.'
-      A4.innerHTML = 'D) “Ela é uma menina de uns treze anos...”.'
+      A1.innerHTML = 'B) defendem ideias complementares.'
+      A2.innerHTML = 'A) apresentam posições divergentes.'
+      A3.innerHTML = 'C) expõem argumentos confusos.'
+      A4.innerHTML = 'D) manifestam o mesmo ponto de vista.'
     }
     
     
     if (c === 8) {
-      tit.innerHTML = 'Mal-estar de um anjo'
+      dsc.innerHTML = "D15 Estabelecer relações lógico - discursivas presentes no texto, marcadas por conjunções, advérbios, etc."
+      
+      tit.innerHTML = 'SOBRE A TRANSPOSIÇÃO DO SÃO FRANCISCO '
     
-      txt.innerHTML = 'Ao sair do edifício, o inesperado me tomou. O que antes fora apenas chuva na vidraça, abafado de cortina e aconchego, era na rua a tempestade e a noite. Tudo isso se fizera enquanto eu descera pelo elevador? Dilúvio carioca, sem refúgio possível. Copacabana com água entrando pelas lojas rasas e fechadas, águas grossas de lama até o meio da perna, o pé tateando para encontrar calçadas invisíveis. Até movimento de maré já tinha, onde se juntasse o bastante de água começava a atuar a secreta influência da Lua: já havia fluxo e refluxo da maré. E o pior era o temor ancestral gravado na carne: estou sem abrigo, o mundo me expulsou para o próprio mundo, e eu que só caibo numa casa e nunca mais terei casa na vida, esse vestido ensopado sou eu, os cabelos escorridos nunca secarão, e sei que não serei dos escolhidos para a Arca, pois já selecionaram o melhor casal de minha espécie.'
+      txt.innerHTML = 'Um problema essencial na discussão das questões envolvidas no projeto de transposição de águas do São Francisco para os rios do Ceará e Rio Grande do Norte diz respeito ao equilíbrio que deveria ser mantido entre as águas que seriam obrigatórias para as importantíssimas hidrelétricas já implantadas no médio/baixo vale do rio Paulo Afonso, Itaparica, Xingó.'
     
-      qst.innerHTML = 'Nesse texto, há uma opinião do narrador em:'
+      qst.innerHTML = 'No trecho ...”transposição de águas do São Francisco <strong>para os rios do Ceará</strong>” (linhas 1 e 2) o termo grifado estabelece uma relação de'
     
     
       correta = A1
       
-      A1.innerHTML = 'A) “E o pior era o temor ancestral gravado na carne:...”.'
-      A2.innerHTML = 'B) “Ao sair do edifício, o inesperado me tomou.”.'
-      A3.innerHTML = 'C) “O que antes fora apenas chuva na vidraça,...”'
-      A4.innerHTML = 'D) “... águas grossas de lama até o meio da perna,...”.'
+      A1.innerHTML = 'C) destino.'
+      A2.innerHTML = 'A) assunto.'
+      A3.innerHTML = 'B) causa.'
+      A4.innerHTML = 'D) finalidade.'
     }
     
     
     if (c === 9) {
-      tit.innerHTML = 'Cães imitam os donos'
+      dsc.innerHTML = "D16 Identificar efeitos de ironia ou humor em textos variados."
+
+      tit.innerHTML = 'Piada'
     
-      txt.innerHTML = 'Ah, olha só, isso não é só coisa de gato. Os cachorros também imitam o que os donos fazem. Um grupo de pesquisadores da Universidade Eötvös Loránd, na Hungria, treinou oito cachorros para ver mesmo se eles imitam ou não o que a gente faz. Primeiro, os donos tiveram de ensinar: fizeram algo (tipo enfiar a cabeça num balde que estava no chão, ou andar em volta de um cone) e, alguns segundos depois, deram a ordem “faça como eu”. Fizeram o teste 19 vezes, com tarefas diferentes e em intervalos maiores (os cães tinham de imitar a ação até 10 minutos depois que os donos haviam feito). Em algumas situações, até levavam o cachorro para longe do cone (ou do balde). E, em todas as tentativas, os bichinhos refizeram os passos do dono. Segundo a pesquisa, isso mostra que os cães têm memória declarativa – memória de longo prazo sobre fatos e eventos que podem ser relembrados conscientemente. “Eles fazem isso [nos imitar] naturalmente, porque são predispostos a aprender socialmente com a gente”, explica Ádám Miklós, um dos pesquisadores. Espertinhos, não? Vai ver é por isso que eles gostam tanto de dormir na sua cama. Só estão te imitando…'
+      txt.innerHTML = 'A menina foi visitar a avó no campo. A avó tinha uma criação enorme de aves, e a menina, que morava na cidade, ficou encantada. E de repente, passeando pela fazenda da avó, ela viu um pavão. Voltou correndo para casa e, toda alegre, avisou à vovó: – Vovó! Vovó! Uma de suas galinhas está dando flor! '
     
-      qst.innerHTML = 'Qual passagem desse texto expressa uma opinião do autor?'
+      qst.innerHTML = 'Nesse texto, o trecho que apresenta humor é: '
     
     
       correta = A4
       
-      A1.innerHTML = 'A) “... os cães têm memória declarativa...”.'
-      A2.innerHTML = 'B) “...‘faça como eu’.”'
-      A3.innerHTML = 'C) “Primeiro os donos tiveram de ensinar:...”.'
-      A4.innerHTML = 'D) “Espertinhos, não?”.'
+      A1.innerHTML = 'A) “A menina foi visitar a avó no campo.”.'
+      A2.innerHTML = 'B) “A avó tinha uma criação enorme de aves,...”. '
+      A3.innerHTML = 'D) “... pela fazenda da avó, ela viu um pavão.”. '
+      A4.innerHTML = 'C) “Uma de suas galinhas está dando flor!”.'
     }
     
     
     if (c === 10) {
-      tit.innerHTML = 'O cerrado exige ações de preservação'
+      dsc.innerHTML = "D17 Identificar o efeito de sentido decorrente do uso da pontuação e de outras notações."
+      
+      tit.innerHTML = 'O marinheiro que tocava tuba '
     
-      txt.innerHTML = 'A Amazônia é um bioma tão majestoso que ofusca os demais existentes no Brasil. Falase muito – interna e externamente – na preservação da floresta. A preocupação é legítima. E deve manter-se. Não significa, porém, que se deva fechar os olhos para os demais. É o caso do cerrado. Segundo maior bioma do país em extensão, ele ocupa 24% do território nacional. Nos 2.039.368 km² de área distribuída em 11 estados e no Distrito Federal, abriga a maior biodiversidade em savana do mundo e dá origem a três nascentes das principais bacias hidrográficas da nação – Amazônia, Paraná e São Francisco. É, pois, estratégico. Não só pela biodiversidade e a conservação de recursos hídricos, mas também pelo sequestro de carbono. O desenvolvimento do oeste, porém, põe em risco o bioma. Desde a construção de Brasília, na década de 1950, desapareceram do mapa 58% do cerrado. Especialistas advertem que, mantido o atual ritmo de destruição, a extinção virá em 50 anos. É assustador.'
+      txt.innerHTML = 'Tendo nascido no interior do Ceará, como foi acabar sendo regente? <br> Nasci no Iguatu, porque meu pai trabalhava naquela época nessa cidade, numa função muito delicada e até pejorativa: a de delegado de polícia. Na época, havia uma espécie de guerra no Ceará, com intervenção federal. <br> [...] E, como ia sendo expulso de tudo quanto era escola, meu pai resolveu me colocar na Escola de Aprendizes de Marinheiros. Aí a coisa mudou. A escola, naquela época, era semicorrecional. Meu pai advertia: “ Agora você toma jeito”.  <br> Éramos 14 irmãos, dos quais eu era o quinto, pela ordem. Família “pequena”, como veem. Oito homens, seis mulheres.'
     
-      qst.innerHTML = 'A opinião do autor desse texto, em relação à destruição do cerrado, evidencia-se pelo uso do termo'
+      qst.innerHTML = 'As aspas empregadas na palavra “‘pequena’” dão à palavra um tom'
     
     
       correta = A2
       
-      A1.innerHTML = 'B) “majestoso”.'
-      A2.innerHTML = 'C) “assustador”.'
-      A3.innerHTML = 'D) “espetacular”.'
-      A4.innerHTML = 'A) “estratégico”.'
+      A1.innerHTML = 'B) crítico.'
+      A2.innerHTML = 'C) irônico.'
+      A3.innerHTML = 'A) coloquial'
+      A4.innerHTML = 'D) metafórico.'
     }
     
     
     if (c === 11) {
-      tit.innerHTML = 'Não se perca na rede '
+      dsc.innerHTML = "D18 Reconhecer o efeito de sentido decorrente da escolha de uma determinada palavra ou expressão."
+      
+      tit.innerHTML = 'Longe de pendurar a chuteira'
     
-      txt.innerHTML = 'A Internet é o maior arquivo público do mundo. De futebol a física nuclear, de cinema a biologia, de religião a sexo, sempre há centenas de sites sobre qualquer assunto. Mas essa avalanche de informações pode atrapalhar. Como chegar ao que se quer sem perder tempo? É para isso que foram criados os sistemas de busca. Porta de entrada na rede para boa parte dos usuários, eles são um filão tão bom que já existem às centenas também. Qual deles escolher? Depende do seu objetivo de busca.  Há vários tipos. Alguns são genéricos, feitos para uso no mundo todo (Google, por exemplo). Use esse site para pesquisar temas universais. Outros são nacionais ou estrangeiros com versões específicas para o Brasil (Cadê, Yahoo e Altavista). São ideais para achar páginas “com.br”.'
+      txt.innerHTML = 'Quem solta a voz para anunciar que “o Maraca é nosso” sabe o que está dizendo. Sentado do lado oﬁcial do Vasco (esquerdo) ou do Flamengo (direito), o torcedor que aguarda uma semana ou mais para vibrar pelo time do coração se sente em casa no Estádio Jornalista Mário Filho, popularmente conhecido como Maracanã (nome de um pássaro). Essa íntima relação provocada pelos quase 200 mil metros quadrados de complexo de lazer começou há 59 anos, quando o jornalista Mário Filho iniciou sua batalha em prol da construção de um mega estádio para a Copa do Mundo de 1950. Assim como a linha da história, que, por vezes, parece repetir, o Maracanã, inaugurado em estado inacabado para a partida entre jogadores de São Paulo e do Rio (3 a 1 para os paulistas), está prestes a respirar novos ares e entrar, novamente, para a história em 2014, quando o Brasil abrigará a Copa do Mundo. [...]'
     
-      qst.innerHTML = 'O período que apresenta uma opinião do autor é'
+      qst.innerHTML = 'No trecho “O <strong>Maraca</strong> é nosso”, o uso da palavra destacada sugere'
     
     
       correta = A3
       
-      A1.innerHTML = 'D) “foram criados sistemas de busca.” '
-      A2.innerHTML = 'A) “A internet é o maior arquivo público do mundo.”'
-      A3.innerHTML = 'B) “essa avalanche de informações pode atrapalhar.”'
-      A4.innerHTML = 'C) “sempre há centenas de sites sobre qualquer assunto.”'
+      A1.innerHTML = 'D) propriedade.&&'
+      A2.innerHTML = 'A) aceitação.'
+      A3.innerHTML = 'B) intimidade.'
+      A4.innerHTML = 'C) respeito'
     }
     
     
     if (c === 12) {
-      tit.innerHTML = 'Zap'
+      dsc.innerHTML = "D19 Reconhecer o efeito de sentido decorrente da exploração de recursos ortográficos e / ou morfossintáticos."
+      
+      tit.innerHTML = 'Estresse animal'
     
-      txt.innerHTML = 'Não faz muito que temos esta nova TV com controle remoto, mas devo dizer que se trata agora de um instrumento sem o qual eu não saberia viver. Passo os dias sentado na velha poltrona, mudando de um canal para outro – uma tarefa que antes exigia certa movimentação, mas que agora ficou muito fácil. Estou num canal, não gosto – zap, mudo para outro. Não gosto de novo – zap, mudo de novo. Eu gostaria de ganhar em dólar num mês o número de vezes que você troca de canal em uma hora, diz minha mãe. Trata-se de uma pretensão fantasiosa, mas pelo menos indica disposição para o humor, admirável nessa mulher.'
+      txt.innerHTML = 'Os animais estão cada vez mais sendo acometidos pelo estresse, que, segundo a veterinária Monisa Corraini, pode desencadear problemas gástricos ou até mesmo a agressividade. O sintoma costuma surgir em períodos grandes de fome ou sede, viagens longas, com a falta ou excesso de exercícios, solidão, mudanças na rotina, em ambientes conturbados, durante o banho e tosa, nas consultas veterinárias, participação em exposições ou competições.  <br> Os bichinhos necessitam de dedicação e qualidade de vida para serem felizes.'
     
-      qst.innerHTML = 'Nesse texto, o narrador emite uma opinião sobre o controle remoto no trecho:'
+      qst.innerHTML = 'No trecho “Os <strong>bichinhos</strong> necessitam de dedicação e qualidade de vida para serem felizes.”, o uso do diminutivo na palavra destacada deve-se'
     
     
       correta = A3
       
-      A1.innerHTML = 'A) “Estou num canal, não gosto – zap, mudo para outro.”.'
-      A2.innerHTML = 'C) “... uma tarefa que [...] agora ficou muito fácil.”.'
-      A3.innerHTML = 'D) “... se trata agora de um instrumento sem o qual eu não saberia viver.”.'
-      A4.innerHTML = 'B) “Passo os dias [...], mudando de um canal para outro...”.'
+      A1.innerHTML = 'A) ao fato de os animais serem pequenos.'
+      A2.innerHTML = 'C) à suavização dos fatos vividos pelos bichos.'
+      A3.innerHTML = 'D) à afetividade pelos bichos de estimação.'
+      A4.innerHTML = 'B) ao desprezo pela situação dos animais.'
     }
     
     
     
     if(c==13) {
-      tit.innerHTML = ''
+      dsc.innerHTML = "D20 Reconhecer diferentes formas de tratar uma informação na comparação de textos que tratam do mesmo tema, em função das condições em que ele foi produzido e daquelas em que será recebido"
       
-      txt.innerHTML = 'Literatura. [Do lat. Litteratura.] S. f. 1. Arte de compor ou escrever trabalhos artísticos em prosa ou verso. 2. O conjunto de trabalhos literários dum país ou duma época. 3. Os homens de letras. 4. A vida literária. 5. A carreira das letras. 6. Conjunto de conhecimentos relativos às obras ou aos autores literários. 7. Qualquer dos usos estéticos da linguagem. (q.v.) 8. Fam. Irrealidade, ficção. 9. Bibliografia. 10.Conjunto de escritos de propaganda de produto industrial.'
+      tit.innerHTML = 'Rubinho a mil por hora'
       
-      qst.innerHTML = 'A finalidade desse texto é'
+      txt.innerHTML = 'Desde criança, Rubens Barrichello é louco por corridas. Aos seis anos já voava nas pistas de kart. Depois passou rápido pela Fórmula Ford, Fórmula Opel, Fórmula 3 e Fórmula 3000. Não parou por aí. Foi o mais jovem piloto da história a entrar para a Fórmula 1, quando tinha apenas 20 anos.  <br><br><strong>Vencer ou vencer</strong><br><br>   Ayrton Senna sempre fez tudo muito rapidinho. Aos quatro anos ganhou o seu primeiro kart. Aos dez, já pilotava no Autódromo de Interlagos. Quando tinha 31 anos, era o mais jovem tricampeão da história da Fórmula 1. Vencer ou vencer era o seu lema.'
+      
+      qst.innerHTML = 'Esse dois textos'
       
       correta = A1
       
-      A1.innerHTML = 'C) definir uma palavra da Língua Portuguesa.'
-      A2.innerHTML = 'A) confirmar a origem de uma palavra latina.'
-      A3.innerHTML = 'B) constatar mudanças de significado de uma palavra.'
-      A4.innerHTML = 'D) informar o surgimento de uma nova palavra.'
+      A1.innerHTML = 'A) apresentam uma biografia.'
+      A2.innerHTML = 'B) convidam para corridas.'
+      A3.innerHTML = 'C) incentivam o uso do kart.'
+      A4.innerHTML = 'D) oferecem um prêmio.'
     }
     
     if (c == 14) {
-      tit.innerHTML = 'Desmatar não vale a pena '
+      dsc.innerHTML = "D21 Reconhecer posições distintas entre duas ou mais opiniões relativas ao mesmo fato ou ao mesmo tema."
+      
+      tit.innerHTML = 'Antena de celular faz mal à saúde?'
     
-      txt.innerHTML = 'Desmatar é ruim, mas traz crescimento econômico. Isso é o que fizeram você acreditar durante muito tempo. A realidade é bem diferente. O modelo de ocupação predominante na Amazônia é baseado na exploração madeireira predatória e na conversão de terras para agropecuária. É o que eu chamo de “boom-colapso”: nos primeiros anos da atividade econômica baseada nesse modelo, ocorre um rápido e efêmero crescimento (o boom). Mas, em seguida, vem um declínio significativo em renda, emprego e arrecadação de tributos (o colapso). A situação de quem era pobre fica ainda pior.  Esse modelo é nefasto em todos os sentidos. O avanço da fronteira na Amazônia é marcado pelo desmatamento, pela degradação dos recursos naturais e, se não bastasse tudo isso, pela violência rural. Em pouco mais de três décadas, o desmatamento passou de 0,5% do território da floresta original para quase 18% do território, em 2008. Além disso, áreas extensas de florestas sofreram degradação pela atividade madeireira predatória e devido a incêndios florestais.'
+      txt.innerHTML = '<strong>Texto 1 </strong><br><br>  A exposição permanente às radiações eletromagnéticas pode causar cefaleia, insônia e até alterações cardiovasculares. A Organização Mundial da Saúde ainda não declarou qual a distância prudente entre uma casa e uma torre de telefonia celular, mas órgãos ambientalistas adotam 300 m como uma medida segura.<br>José Carlos Virtuoso, professor de engenharia ambiental.   <br><br><strong>Texto 2</strong><br><br> Não há comprovação de que a radiação das antenas de telefonia celular cause dano à saúde. A única evidência se refere à tolerância humana aos níveis de radiação eletromagnética. O problema é que não há uma fiscalização dos órgãos competentes sobre esses níveis, produzidos também por outras fontes, como antenas de rádio e TV.'
     
-      qst.innerHTML = 'Por suas características, esse texto é'
+      qst.innerHTML = 'Nesses dois textos, as opiniões emitidas pelos professores são'
     
       correta = A4
     
-      A1.innerHTML = 'D) uma reportagem.'
-      A2.innerHTML = 'B) um relato.'
-      A3.innerHTML = 'C) uma resenha.'
-      A4.innerHTML = 'A) um artigo'
+      A1.innerHTML = 'C) iguais.'
+      A2.innerHTML = 'D) semelhantes.'
+      A3.innerHTML = 'A) complementares.'
+      A4.innerHTML = 'B) divergentes'
     }
     
-    if (c == 15) {
+    /*if (c == 15) {
       tit.innerHTML = ''
     
       txt.innerHTML = 'Este livro feito sob medida para você, com histórias que retratam o universo dos adolescentes e que, na maioria das vezes, são contadas pelos próprios adolescentes. Você vai rir e chorar ao ler sobre a descoberta da verdadeira amizade, a perda do primeiro amor e as delicadas relações entre pais e filhos. Cada uma das histórias contém algum significado especial. Elas falam da luta dos jovens para crescer e realizar seus sonhos, superando a timidez, o medo do julgamento dos outros e seus próprios limites. Também alegram, comovem, reacendem a esperança e estimulam o desejo de empenhar-se para amar e viver plenamente. Esperamos que este livro se torne seu melhor amigo, disponível sempre que você precisar e pronto para contar uma história que vai aquecer o seu coração. '
@@ -1926,7 +1954,7 @@ function Monitor() {
       A2.innerHTML = 'C) “Sinais de seca brava, terrível!!” '
       A3.innerHTML = 'B) “aroeiras expõem seus galhos”'
       A4.innerHTML = 'D) “Toque de saída. Toque de entrada”.'
-    }
+    }*/
     
   }
   

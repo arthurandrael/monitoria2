@@ -254,3 +254,10 @@ small {
   right: 3%;
   bottom: 1%;
 }
+
+
+#h1 {
+  font-size: 70%;
+  font-weight: bold;
+  padding: 3%;
+}
