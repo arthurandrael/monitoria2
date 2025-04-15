@@ -1538,111 +1538,113 @@ function Monitor() {
     }
     playSound('audio/monitor.mp3')
     
-    
-    
+/*-------------------------*/
     
     
     
     
     if (c === 1){
-      dsc.innerHTML = "D15 Estabelecer relações lógico - discursivas presentes no texto, marcadas por conjunções, advérbios, etc."
+      dsc.innerHTML = ""
       
-      tit.innerHTML = "O Berço da filosofia e da democracia"
+      tit.innerHTML = ""
       
-      txt.innerHTML = "Atenas pode-se orgulhar de ter sido o berço da filosofia, conhecimento que superou os mitos na tentativa de se explicar o mundo. Nas ruas da capital grega, circularam pensadores como Sócrates, Platão e Aristóteles, filósofos cujas ideias tornaram-se baluartes para a sociedade ocidental, apesar dos milhares de anos que nos separam deles. Além disso, foi lá que se viveu uma experiência até então inédita de democracia, sistema político defendido hoje nos quatro cantos do planeta.  Atenas viu nascer a democracia, o primeiro regime político a pregar a igualdade de direito entre todos os homens, independentemente da classe social. Mesmo que ele não tenha funcionado a pleno vapor na Antiga Grécia, foi lá que o sistema nasceu e dessa experiência partiram as ideias e modelos subsequentes. Sem a ousadia ateniense de pregar e defender valores até então nunca cogitados, provavelmente, o rumo da Humanidade teria sido diferente."
+      txt.innerHTML = "1. Qual é o principal papel da fundamentação teórica em um trabalho acadêmico?."
       
-      qst.innerHTML = "No fragmento “<strong>Além disso</strong>, foi lá que se viveu uma experiência até então inédita de democracia”, a expressão destacada tem um valor semântico de"
+      qst.innerHTML = ""
       
       
       correta = A4
       
-      A1.innerHTML = 'D) oposição'
-      A2.innerHTML = 'C) consequência'
-      A3.innerHTML = 'B) comparação.'
-      A4.innerHTML = 'A) acréscimo.'
+      A1.innerHTML = 'B) Garantir que o trabalho tenha mais páginas.'
+      A2.innerHTML = 'A) Substituir a análise dos dados da pesquisa.'
+      A3.innerHTML = 'C) Apresentar as normas da ABNT.'
+      A4.innerHTML = 'D) Embasar teoricamente o estudo, mostrando o que já foi pesquisado sobre o tema.'
       
       
       
       
     }
     if (c === 2) {
-      dsc.innerHTML = "D16 Identificar efeitos de ironia ou humor em textos variados."
+      dsc.innerHTML = ""
       
-      tit.innerHTML = 'Anedotinha'
+      tit.innerHTML = ''
       
-      txt.innerHTML = "Juquinha foi visitar o Museu Histórico. Aí, cansou de andar, sentou-se numa cadeira belíssima que estava no centro da sala.<br> Veio o guarda:  <br> – Meu filho, não pode sentar nesta cadeira, não. Esta cadeira é de Pedro I. <br> E o Juquinha: <br>  – Não tem problema. Quando ele chegar eu me levanto!"
+      txt.innerHTML = "2. Por que é importante revisar a literatura existente ao elaborar a fundamentação teórica ?"
       
-      qst.innerHTML = "O humor desse texto está na"
+      qst.innerHTML = ""
       
       
       correta = A1
       
-      A1.innerHTML = 'B) resposta de Juquinha.'
-      A2.innerHTML = 'A) atitude de Juquinha'
-      A3.innerHTML = 'C) descrição da cadeira.'
-      A4.innerHTML = 'D) fala do guarda.'
+      A1.innerHTML = 'B) Para compreender o que já foi estudado e evitar repetição de temas.'
+      A2.innerHTML = 'A) Para copiar ideias de outros autores.'
+      A3.innerHTML = 'C) Para facilitar a escrita da conclusão.'
+      A4.innerHTML = 'D) Para escolher um tema aleatório para a pesquisa.'
 
     }
     
     if (c===3) {
-      dsc.innerHTML = "D17 Identificar o efeito de sentido decorrente do uso da pontuação e de outras notações."
+      dsc.innerHTML = ""
 
-      tit.innerHTML = "E a viagem continua..."
+      tit.innerHTML = ""
       
-      txt.innerHTML = "Depois de rezarmos e cantarmos muito, voltávamos todos para casa e logo chegavam convidados para o almoço, que sempre era especial. Comidas italianas que vovó, a nona, fazia. <br> E todos os adultos matavam saudade da Itália. Ela tinha vindo de lá, de navio, no começo do século, quando meu pai tinha três anos. Mamãe chegou um pouco mais tarde, com seus pais. <br> Depois de moços, conheceram-se no Brasil e se casaram. <br> Durante o almoço, falavam em italiano e tomavam vinho. Era engraçado! Como na missa, não entendíamos nada..."
+      txt.innerHTML = "3. Como a fundamentação teórica contribui para a delimitação do problema de pesquisa?"
       
-      qst.innerHTML = 'Nesse texto, o ponto de exclamação utilizado em “Era engraçado!” (último parágrafo) sugere'
+      qst.innerHTML = ''
       
       
       correta = A1
       
-      A1.innerHTML = 'D) destaque de um comentário.'
-      A2.innerHTML = 'A) conclusão de uma fala.'
-      A3.innerHTML = 'C) demonstração de satisfação'
-      A4.innerHTML = 'B) contestação de uma situação.'
+      A1.innerHTML = 'B) Ajuda a identificar lacunas e a focar em aspectos específicos do tema. '
+      A2.innerHTML = 'A) Ela não influencia na delimitação do problema.'
+      A3.innerHTML = 'C) Serve apenas para citar autores famosos.'
+      A4.innerHTML = 'D) Determina a metodologia que será usada."'
 
     }
     
     
     if(c===4) {
-      dsc.innerHTML = "D18 Reconhecer o efeito de sentido decorrente da escolha de uma determinada palavra ou expressão."
+      dsc.innerHTML = ""
       
-      txt.innerHTML = 'Às 15:03 em 16 janeiro 2 009, Lourdes Alves disse... <br> Olá Carla, espero te encontrar no próximo dia 12 de fevereiro. Gosto da possibilidade do encontro presencial e tenho certeza que temos figurinhas para trocar. <br> Um forte abraço e bem-vinda. <br> Às 14:01 em 17 janeiro 2 009, Carla Amaral disse... <br> Sim, nem que chova canivete, vou estar presente no encontro em fevereiro. <br> Me encontro regularmente com César, Mara, Rachel e Marília (menos). Neste final de semana vamos juntos para Socorro... estão todos bem. <br> Abraços <br> Carla'
+      txt.innerHTML = '4. Quais são os riscos de uma fundamentação teórica fraca ou mal elaborada?'
       
-      qst.innerHTML = 'A expressão “nem que chova canivete” (5° parágrafo) sugere'
-      
+      qst.innerHTML = ''
+
       
       correta = A3
       
-      A1.innerHTML = 'D) neutralidade'
-      A2.innerHTML = 'A) brutalidade.'
-      A3.innerHTML = 'B) certeza'
-      A4.innerHTML = 'C) mudança.'
+      A1.innerHTML = 'D) A fundamentação teórica não tem impacto significativo.'
+      A2.innerHTML = 'A) O trabalho será mais curto e fácil de ler.'
+      A3.innerHTML = 'C) O trabalho pode perder credibilidade e rigor científico. '
+      A4.innerHTML = 'B) A banca avaliadora pode ignorar essa parte.'
     }
     
     if(c===5) {
-      dsc.innerHTML = "D19 Reconhecer o efeito de sentido decorrente da exploração de recursos ortográficos e / ou morfossintáticos."
+      dsc.innerHTML = ""
       
-      tit.innerHTML = 'A raposa e as uvas'
+      tit.innerHTML = ''
       
-      txt.innerHTML = 'Certa raposa esfaimada encontrou uma parreira carregadinha de lindos cachos maduros, coisas de fazer vir água à boca. Mas tão altos que nem pulando. <br> O matreiro bicho torceu o focinho: <br> – Estão verdes – murmurou – Uvas verdes, só para cachorros. <br> E foi-se. <br> Nisto deu um vento e uma folha caiu. <br> A raposa, ouvindo o barulhinho, voltou depressa e pôs-se a farejar... <br> Quem desdenha quer comprar.'
+      txt.innerHTML = '5. De que forma a fundamentação teórica contribui para a originalidade de uma pesquisa ?'
       
-      qst.innerHTML = 'Nesse texto, a palavra “carregadinha” tem a ver com'
+      qst.innerHTML = ''
       
       
       correta = A2
       
-      A1.innerHTML = 'A) o sabor das frutas.'
-      A2.innerHTML = 'B) a quantidade de uvas produzidas.'
-      A3.innerHTML = 'C) o tamanho dos cachos.'
-      A4.innerHTML = 'D) o estado das uvas: madurinhas.'
+      A1.innerHTML = 'A) Repetindo estudos antigos para reforçar os resultados.'
+      A2.innerHTML = 'C) Ajudando a identificar lacunas e propor novas abordagens.'
+      A3.innerHTML = 'B) Limitando a pesquisa a teorias já existentes.'
+      A4.innerHTML = 'D) Garantindo que o pesquisador use as mesmas fontes que outros autores.'
     }
     
-    if(c===6) {
+   /* if(c===6) {
       dsc.innerHTML = "D20 Reconhecer diferentes formas de tratar uma informação na comparação de textos que tratam do mesmo tema, em função das condições em que ele foi produzido e daquelas em que será recebido"
       
       tit.innerHTML = 'Texto I'
       
+
+
+  
       txt.innerHTML = '“Sou completamente a favor da flexibilização das relações trabalhistas, pois a velhís¬sima legislação brasileira, além de anacrônica, vem comprometendo seriamente a nossa competitividade em nível global.” <br><br><strong>Texto II</strong><br><br>“É uma falácia dizer que com a eliminação dos direitos trabalhistas se criarão mais empregos. O trabalhador brasileiro já é por demais castigado para suportar mais essa provocação.”'
       
       qst.innerHTML = 'Os textos acima tratam do mesmo assunto, ou seja, da relação entre patrão e em¬pregado. Os dois se diferenciam, porém, pela abordagem temática. O texto II em relação ao texto I apresenta uma:'
@@ -1804,7 +1806,7 @@ function Monitor() {
       A2.innerHTML = 'D) semelhantes.'
       A3.innerHTML = 'A) complementares.'
       A4.innerHTML = 'B) divergentes'
-    }
+    }*/
     
     /*if (c == 15) {
       tit.innerHTML = ''
